@@ -2,7 +2,7 @@ import { useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchJobs } from "../../features/job/jobSlice";
 import SingleJob from "./SingleJob";
-import Loading from "../utils/Loading";
+import JobSkeleton from "../ui/Skeletons/JobSkeleton";
 
 export default function JobsList() {
   const dispatch = useDispatch();
@@ -37,7 +37,13 @@ export default function JobsList() {
   // Decide what to render
   let content;
   if (isLoading) {
-    content = <Loading />;
+    content = (
+      <>
+        <JobSkeleton />
+        <JobSkeleton />
+        <JobSkeleton />
+      </>
+    );
   } else if (isError) {
     content = <div className="text-red-500 text-lg">{error}</div>;
   } else if (filteredJobs?.length === 0) {
