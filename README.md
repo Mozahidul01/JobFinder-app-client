@@ -8,33 +8,19 @@ This application exemplifies the utilization of Redux Toolkit to perform basic C
 
 To run this project, you will need to have Node.js installed on your machine.
 
-### Installing
-
-1. Clone this repository to your local machine.
-2. In your terminal, navigate to the project directory and run the following command to install the project dependencies:
-
-``` bash
-npm install
-```
-
 ### Running the App
 
-- In your terminal, navigate to the project directory and then go to server folder and install the server dependencies:
+- Clone this repository to your local machine.
+- In your terminal, navigate to the project directory and run the following command to install the project dependencies:
 
 ``` bash
-npm install
+yarn 
 ```
 
-- Then run the following command to start the server
+- Now, navigate to the project directory and run the following command to start the development server:
 
 ``` bash
-npm start
-```
-
-- Nnow, navigate to the project directory and run the following command to start the development server:
-
-``` bash
-npm run dev
+yarn run dev
 ```
 
 - Open your browser and go to `http://localhost:5173/` to see the app.
@@ -64,4 +50,4 @@ npm run dev
 
 ## Acknowledgments
 
-This project was created as a sample project to showcase how to use React and Redux-toolkit together to build a simple CRUD app. It was a Assignment of LWS - Think in a redux way course.
+This project was created as a sample project to showcase how to use React and Redux-toolkit together to build a simple CRUD app.
