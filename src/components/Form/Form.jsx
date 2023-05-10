@@ -92,16 +92,19 @@ export default function Form() {
 
   return (
     <form
-      className="space-y-6"
+      className="space-y-4"
       onSubmit={edit ? handleUpdateJob : handleAddJob}
     >
       <div className="flex flex-col md:flex-row md:items-center gap-2">
-        <label
-          htmlFor="job-title"
-          className="md:w-32 text-lg font-medium text-slate-300"
-        >
-          Job Title
-        </label>
+        <div className="flex">
+          <label
+            htmlFor="job-title"
+            className="md:w-24 text-lg font-medium text-slate-300"
+          >
+            Job Title
+          </label>
+          <span className="px-2">:</span>
+        </div>
         <select
           id="job-title"
           name="job-title"
@@ -134,12 +137,15 @@ export default function Form() {
       </div>
 
       <div className="flex flex-col md:flex-row md:items-center gap-2">
-        <label
-          htmlFor="job-type"
-          className="md:w-32 text-lg font-medium text-slate-300"
-        >
-          Job Type
-        </label>
+        <div className="flex">
+          <label
+            htmlFor="job-type"
+            className="md:w-24 text-lg font-medium text-slate-300"
+          >
+            Job Type
+          </label>
+          <span className="px-2">:</span>
+        </div>
         <select
           id="job-type"
           name="job-type"
@@ -161,12 +167,15 @@ export default function Form() {
       </div>
 
       <div className="flex flex-col md:flex-row md:items-center gap-2">
-        <label
-          htmlFor="job-salary"
-          className="md:w-32 text-lg font-medium text-slate-300"
-        >
-          Salary
-        </label>
+        <div className="flex">
+          <label
+            htmlFor="job-salary"
+            className="md:w-24 text-lg font-medium text-slate-300"
+          >
+            Salary
+          </label>
+          <span className="px-2">:</span>
+        </div>
         <div className="flex shadow-sm w-full relative rounded-md bg-slate-700">
           <span className="absolute left-3 top-1/2 transform -translate-y-1/2  pointer-events-none">
             BDT
@@ -185,12 +194,15 @@ export default function Form() {
       </div>
 
       <div className="flex flex-col md:flex-row md:items-center gap-2">
-        <label
-          htmlFor="deadline"
-          className="md:w-32 text-lg font-medium text-slate-300"
-        >
-          Deadline
-        </label>
+        <div className="flex ">
+          <label
+            htmlFor="deadline"
+            className="md:w-24 text-lg font-medium text-slate-300"
+          >
+            Deadline
+          </label>
+          <span className="px-2">:</span>
+        </div>
         <input
           type="date"
           name="deadline"

@@ -28,7 +28,7 @@ export default function HeaderFilter() {
       </div>
 
       <select
-        className="appearance-none bg-slate-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-300 cursor-pointer"
+        className="appearance-none bg-slate-700 rounded-md px-2 md:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-300 cursor-pointer"
         onChange={handSort}
       >
         <option>Default</option>
